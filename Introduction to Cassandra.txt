@@ -3,3 +3,20 @@ Introduction:
 1. Cassandra is a distributed database from apache.
 2. It is highly scalable.
 3. High availability with no single points of failure.
+4. It is a type of NoSQL database. Thus does not have any fixed schema and very simple query language.
+5. It does not guarantee ACID properties (Atomicity, Consistency, Isolation, Durability).
+6. It is eventually consistent.
+7. Each node in cassandra cluster is same, and can serve requests.
+8. If nodes return different values, then most recent value is returned and a read repair is performed.
+
+
+Components of cassandra :
+
+Node : It is the place where the data is stored.
+Data Center : It is a collection of related nodes.
+Cluster : Collection of one or more data centers.
+Commit log : Crash recovery machenism, every write operation is written in cassandra.
+Mem-Table : mem-table is memory resident data structre. after commit log, data is written to mem-table.
+SSTable : Stored data flushed from mem-table.
+Bloom filter : Non-deterministic algorithms to test whether an element is member of a set.
+
