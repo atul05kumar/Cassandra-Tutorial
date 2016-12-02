@@ -1,0 +1,5 @@
+Introduction:
+
+1. Cassandra is a distributed database from apache.
+2. It is highly scalable.
+3. High availability with no single points of failure.
